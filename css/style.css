@@ -1,0 +1,387 @@
+/******* general style *******/
+*
+{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.row{margin: 0}
+body
+{
+    font-family: verdana;
+    background: #fff;
+    height: 5000px
+}
+a:hover{text-decoration: none;color: #fff}
+.sections
+{
+    padding: 90px 0
+}
+.scroll-top
+{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    color: #fff;
+    line-height: 45px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: all 0.4s ease-in-out;
+    display: none;
+    background: #4d4942;
+    z-index: 999999;   
+}
+
+/****** ./general style *********/
+/***** home section ******/
+.home
+{
+    background-image: url(../img/photo-1472289065668-ce650ac443d2.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/**** ./home section ******/
+/******* sidebar *******/
+.sidebar
+{
+    position:fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #1d809f;
+    transition: all 0.4s ease-in-out;
+    z-index: 999
+}
+.active
+{
+    right: 0
+}
+ul
+{
+    list-style: none
+}
+ul li
+{
+    padding: 20px;
+}
+ul li:first-child
+{
+    font-size: 1.2rem;
+    background: rgba(52,58,64,.1);
+    height: 80px;
+    line-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+ul li:not(.first):hover
+{
+    background: rgba(255,255,255,.2);
+}
+ul li a
+{
+    text-decoration: none !important;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px
+}
+ul li a:hover
+{
+    color: #fff
+}
+.sidebar i
+{
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgba(52,58,64,.5);
+    line-height: 50px;
+    border-radius: 4px;
+}
+.sidebar i:hover
+{
+    background: #343a40
+}
+/****** ./sidebar ******/
+
+/*** content ***/
+.content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.content h1
+{
+    font-size: 70px;
+    font-weight: 700;
+    color: #272626
+}
+.content h3
+{
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 700
+}
+.content a
+{
+    margin-top: 35px;
+    width: 195px;
+    height: 70px;
+    line-height: 55px;
+    font-weight: 700;
+}
+/*** ./content ***/
+/****** ./home ******/
+/******** about *********/
+.about
+{
+    background: #f8f9fa
+}
+.about .about-content h2
+{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #272626
+}
+.btn-dark
+{
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    margin-top: 35px;
+    width: 195px;
+    height: 70px;
+    line-height: 55px;
+    font-weight: 700;
+}
+
+.btn:focus,.btn:hover
+{
+    background-color: #155d74!important;
+    border-color: #155d74!important;
+}
+/********* ./about **************/
+/***** services *****/
+.services
+{
+    background: #1d809f
+}
+.services h5
+{
+    color: #ecb807;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+.services h2
+{
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: -1px
+}
+.services .grid
+{
+    margin-top: 40px
+}
+.services .grid i
+{
+    width: 105px;
+    height: 105px;
+    line-height: 105px;
+    background: #fff;
+    border-radius: 50%;
+    color: #1d809f
+}
+.services .grid h4
+{
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px
+}
+.services .grid p
+{
+    color: rgba(255,255,255,.7)
+}
+/******* ./services ********/
+/********* part **********/
+.part
+{
+    background-image: url(../img/portfolio-4.jpg);
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative
+}
+.part .part-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.part .part-content .h1
+{
+    font-size: 50px;
+    max-width: 500px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 50px
+}
+.part .part-content .btn
+{
+    width: 165px;
+    height: 60px;
+    line-height: 47px;
+    border: 0;
+}
+.part .part-content .btn:hover
+{
+    background-color: #155d74!important;
+    border-color: #155d74!important;
+}
+/********* ./part **********/
+/*********** portfolio ***********/
+.portfolio-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: 550px;
+    margin: auto auto 1rem;
+    transition: all 0.4s ease-in-out
+}
+.portfolio-item .caption {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33,37,41,.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.caption .caption-content {
+    color: #fff;
+    margin: auto 3rem 6rem;
+}
+.caption .caption-content h2 {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.portfolio-item .caption .caption-content p {
+    font-weight: 300;
+    font-size: 14px;
+}
+.portfolio-item:hover
+{
+    transform: scale(0.8);
+}
+/*********** ./portfolio ***********/
+/************* contact *****************/
+.contact
+{
+    background: #1d809f;
+    min-height: 350px
+}
+.contact .h1
+{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+.contact .btn-contact
+{
+    width: 150px;
+    height: 58px;
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    margin-top: 20px
+}
+.contact .btn-contact:nth-child(3)
+{
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+    margin-left: 20px
+}
+.contact .btn-contact:nth-child(2):hover
+{
+    color: #212529 !important;
+    background-color: #e2e6ea !important;
+    border-color: #dae0e5;
+}
+.contact .btn-contact:nth-child(3):hover
+{
+    background-color: #23272b !important;
+    border-color: #1d2124 !important;
+    color: #fff !important
+}
+/************** ./contact *****************/
+.awesome
+{
+    margin-top: 120px
+}
+.awesome i
+{
+    width: 70px;
+    height: 70px;
+    background: #1d809f;
+    line-height: 70px;
+    color: #fff;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.awesome .copy
+{
+    margin-top: 70px;
+    color: #6c757d!important
+}
+
+/****** media *******/
+@media(max-width : 768px)
+{
+    .content h1
+    {
+        font-size: 27px
+    }
+    .content h3
+    {
+        font-size: 14px
+    }
+    .about .about-content h2
+    {
+        font-size: 20px
+    }
+    .services h2
+    {
+        font-size: 25px
+    }
+    .part .part-content .h1
+    {
+        font-size: 21px
+    }
+}
